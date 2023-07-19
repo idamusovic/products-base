@@ -1,18 +1,28 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { RouterModule, Routes } from '@angular/router';
+
 import {HttpClientModule} from "@angular/common/http";
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ProductListComponent } from './components/product-list/product-list.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ProductAddComponent } from './components/product-add/product-add.component';
+import { ProductViewComponent } from './components/product-view/product-view.component';
+import { ProductEditComponent } from './components/product-edit/product-edit.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProductListComponent
+    ProductListComponent,
+    ProductAddComponent,
+    ProductViewComponent,
+    ProductEditComponent
   ],
   imports: [
     BrowserModule,
+    RouterModule.forRoot(appRoutes),
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule
