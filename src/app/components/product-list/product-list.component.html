@@ -1,1 +1,9 @@
-<div>List</div>
+<h2>Product List</h2>
+<ul>
+  <li *ngFor="let product of products">
+    <h3>{{ product.title }}</h3>
+    <p>Price: {{ product.price }}</p>
+    <p>Description: {{ product.description }}</p>
+    <img [src]="product.images[0]" alt="{{ product.title }}"/>
+  </li>
+</ul>
