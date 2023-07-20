@@ -9,6 +9,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { ProductAddComponent } from './components/product-add/product-add.component';
 import { ProductViewComponent } from './components/product-view/product-view.component';
 import { ProductEditComponent } from './components/product-edit/product-edit.component';
+import { ProductListItemComponent } from './components/product-list-item/product-list-item.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { ProductEditComponent } from './components/product-edit/product-edit.com
     ProductListComponent,
     ProductAddComponent,
     ProductViewComponent,
-    ProductEditComponent
+    ProductEditComponent,
+    ProductListItemComponent
   ],
   imports: [
     BrowserModule,
