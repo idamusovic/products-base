@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { RouterModule, Routes } from '@angular/router';
 
 import {HttpClientModule} from "@angular/common/http";
 import { AppRoutingModule } from './app-routing.module';
@@ -22,7 +21,6 @@ import { ProductEditComponent } from './components/product-edit/product-edit.com
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(appRoutes),
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule
