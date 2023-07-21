@@ -1,7 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, map, of } from 'rxjs';
-import { Product } from '../product.model';
+
+
 
 @Injectable({
   providedIn: 'root'
@@ -25,15 +26,14 @@ export class ProductService {
       }));
   }
 
-  list() {  //show all products
-    fetch(this.url)
-    .then(res => res.json())
+  list() {  
+    fetch(this.url).then(res => res.json())
     .then(console.log);
 
     return this.products;
   }
 
-  get(id: number){    //show one product
+  get(id: number){    
     fetch(this.url + '/id')
     .then(res => res.json())
     .then(console.log);
